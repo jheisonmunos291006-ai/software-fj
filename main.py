@@ -1,4 +1,4 @@
-from datetime import datetime, timedelta
+from datetime import datetime
 from gestor import GestorSistema
 from entidades import Cliente
 from servicios import ReservaSala, AlquilerEquipo, Asesoria
@@ -120,6 +120,7 @@ def menu():
                 cargar_datos_demo()
             else:
                 print("Opción no válida. Intente nuevamente.")
+                registrar_evento(f"Opcion invalida: {opcion}")
         except Exception as e:
             print(f"No se pudo completar la entrada: {e}")
             registrar_error("Error no previsto en el menú", e)
