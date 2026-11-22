@@ -1,4 +1,4 @@
-from datetime import datetime, timedelta
+from datetime import datetime
 from gestor import GestorSistema
 from entidades import Cliente
 from servicios import ReservaSala, AlquilerEquipo, Asesoria
