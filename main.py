@@ -120,6 +120,7 @@ def menu():
                 cargar_datos_demo()
             else:
                 print("Opción no válida. Intente nuevamente.")
+                registrar_evento(f"Opcion invalida: {opcion}")
         except Exception as e:
             print(f"No se pudo completar la entrada: {e}")
             registrar_error("Error no previsto en el menú", e)
